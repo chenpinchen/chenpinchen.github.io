@@ -52,3 +52,15 @@ for c in count:
 context
 
         
+
+from datetime import datetime
+d = '2018/11/24 PM 04:04:04'
+d_format = datetime.strptime(d, '%Y/%m/%d %p %X') 
+d_reformat = d_format.strftime( '%Y.%m.%H %M %S')
+
+print(d)
+print(d_format)
+print(d_reformat)
+
+d_reformat = d_format.strftime(' %Y.%m.%H: %M :%S')
+print(d_reformat)
